@@ -1,0 +1,203 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+header{
+    background: black;
+    height: 100px;
+
+}
+header h1{
+    font-family: cursive;
+    color:white;
+    text-align: center;
+    line-height: 100px;
+}
+
+h3{
+    text-align: center;
+    letter-spacing: 2px;
+}
+img{
+    display: none;
+    float: right;
+    cursor: pointer;
+    
+}
+
+
+.trashbox{
+    
+    margin-left: 15px;
+    
+}
+
+
+
+#btn-addtask{
+display: block;
+width: 30%;
+margin: 0px auto ;
+margin-top: 60px;
+margin-bottom: 20px;
+border-radius: 100px;
+border: none;
+padding: 12px;
+color:white;
+background: rgba(0,0,255,0.8); ;
+outline: none;
+cursor: pointer;
+font-size: 25px;
+
+  transition: background   0.5s;
+}
+#btn-addtask:hover{
+background-color: blue;
+
+
+}
+
+#entertask{
+
+border: none;
+border-bottom: 2px solid black;
+outline: none;
+padding-bottom: 15px;
+
+
+width: 100%;
+}
+
+#ct{
+
+      display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 1; /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+ /* background-color: rgb(0,0,0); // Fallback color */
+  background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+
+}
+
+/* Modal Content/Box */
+.modal-content {
+  background-color: #fefefe;
+  margin: 10% auto; /* 15% from the top and centered */
+  padding: 20px;
+  border: 1px solid #888;
+  width: 30%;
+  height: 30%; /* Could be more or less, depending on screen size */
+}
+
+.close {
+  color: #aaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+.close:hover,
+.close:focus {
+  color: black;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+ table,th,td {
+    border: 5px solid white;
+    font-family: sans-serif;
+}
+
+table{
+    border-collapse: collapse;
+    width: 50%;
+    margin: auto;
+    background:#6f8e8c;
+    color:black;
+}
+th{
+    padding: 15px;
+    background: #065a5c;
+    color:white;
+}
+tr{
+    cursor: pointer;
+}
+td{
+  color:white;
+padding: 10px;
+text-align: center;
+line-height: 30px;
+}
+
+
+
+
+
+/*radio */
+input[type="radio"]{
+float: right;
+display:none;
+
+      }
+label{
+    padding:10px;
+    
+    border-radius: 40px; 
+}
+
+
+.g{
+    background: green;
+    color:white;
+}     
+.y{
+ background: gold;
+ color:white;
+}
+.r{
+    background: red;
+    color:white;
+}
+
+
+
+
+@media only screen and (max-width: 500px) {
+
+
+#btn-addtask{
+width: 50%;
+font-size: 15px;
+
+}
+table{
+    width: 100%;
+    font-size:12px;
+}
+
+label{
+    padding:5px;
+    font-size: 12px;
+    margin-right:5px;
+    border-radius: 40px; 
+}
+
+img{
+    margin-top: 8px;
+    width: 18px;
+    height: 18px;
+}
+
+.modal-content {
+    margin-top: 60%;
+  width: 60%;
+  height: 20%; 
+}
+
+
+
+}
